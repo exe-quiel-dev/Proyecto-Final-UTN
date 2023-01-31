@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,700;1,300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto-Final</title>
+</head>
+<body>
+    <noscript>Active javascript en su navegador para mejorar la experiencia</noscript>
+    <nav>
+        <a href="./index.html">
+            <svg width="200" height="80">
+                <rect class="monitor" x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#2D89C6"></rect>
+                <rect class="monitor" x="50" y="10" width="50" height="25" rx="2" id="mon2" fill="#53547d"></rect>
+                <polygon class="teclado" points="45 45 ,105 45,105 62,45 62" fill="#2D89C6" id="tec1"></polygon>
+                <polygon class="teclado" points="50 48 ,100 48,100 58,50 58" fill="#53547d" id="tec2"></polygon>
+            </svg>
+        </a>
+        <ul class="menu">
+            <li class="menu-item"><a href="./historia.html" class="menu-link" target="_blank">historia</a></li>
+            <li class="menu-item"><a href="./juego.html" class="menu-link">juguemos</a></li>        
+        </ul>
+    </nav>
+    <header>   
+        <h1>PROGRAMACION E HISTORIA</h1>
+    </header>
+    <main> 
+        
+        <section class="game-cards-section">
+            <h2>contenido</h2>
+            <div class="container-cards-section">
+                <div class="card" id="img1">
+                    <img class="card-image" src="./assets/imagenes/img1.jpg" alt="imagen">
+                    <p>Juguemos un poco sobre la computacion</p>
+                    <a class="card-button" href="./historia.html" target="_blank">Ir a Historia</a>
+                </div>
+                <div class="card" id="img2">
+                    <img class="card-image"  src="./assets/imagenes/img2.jpg" alt="imagen">
+                    <p>Conozcamos Un poco sobre la historia de la programacion</p>
+                    <a class="card-button" href="">Ir a Juego</a>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <img class="footer-logo" src="./assets/imagenes/logo.png" alt="">
+            <h3>programacion e historia</h3>
+        </div>
+        <div class="footer-right">Sitio con fines educativos - Creado por M. Victoria Lopez</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

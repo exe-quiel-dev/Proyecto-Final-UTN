@@ -1,0 +1,60 @@
+
+
+
+
+
+/* ====== My Class  ====== */
+h2{
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.cajasSoltar{
+    width: 275px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(83, 158, 208);
+    margin: 2px;
+}
+.cajas, .boton-reinicio{
+    display: flex;
+    justify-content: center;
+}
+.cajaimagenes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px;
+}
+.img-rompe{
+    width: 275px;
+    height: 400px;
+    margin: auto 0px;
+}
+main{
+    background-image: linear-gradient(-60deg, #53547d,rgb(83, 158, 208));
+}
+
+.cajasSoltar:hover{
+    background: rgb(45, 137, 198);
+}
+.reinicio{
+    padding: 20px 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: #091d43 1px 1px 5px;
+    text-align: center;
+    background-image: linear-gradient(135deg, #53547daf,rgba(83, 158, 208, 0.655));
+    color: white;
+}
+
+.reinicio:hover{
+    background-image: linear-gradient(135deg, #9797b7af,rgba(33, 134, 202, 0.655));
+}
+

@@ -1,0 +1,107 @@
+:root{
+    --first-color:#ffffff;
+    --first-color-alpha:#f5f0bb8b;
+    --second-color:#C4DFAA;
+    --second-color-alpha:#c4dfaa9f;
+    --third-color:#90C8AC;
+    --third-color-alpha:#90c8ac9a;
+    --fourth-color:#091d43;
+    --link-color:#73A9AD;
+    --link-color-alpha:#73a9ad94;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+}
+nav, ul, header,  footer{
+    display: flex;
+    align-items: center;
+}
+nav{
+    justify-content: space-between;  
+    background-image: linear-gradient(60deg,rgba(83, 158, 208, 0.397), #53547d5b);
+    min-height: 70px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+}
+header{
+    background-image: url(./assets/imagenes/codigo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+h1{
+    color: var(--first-color);
+    text-shadow: 2px 2px gray, 6px 6px 6px rgba(0, 0, 0, 0.6);
+    animation: appearTittle .5s ease-in-out ;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color: var(--first-color);
+    margin-bottom: 5rem;
+}
+footer{
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgb(83, 158, 208);
+}
+
+
+/* ====== My Class  ====== */
+.menu{
+    width: 300px;
+    justify-content: space-around; 
+    margin: 0 40px;
+}
+.menu-item{
+    margin: auto 0px;
+}
+.menu-link{
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(83, 158, 208);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px var(--link-color-alpha);
+}
+.footer-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left>h3{
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.footer-logo{
+    height: 30px;
+}
+.footer-right{
+    font-weight: 100;
+}
+
+.teclado, .monitor {
+    animation: animate-svg 1s ease ;
+}
+
+@keyframes animate-svg {
+    0% {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
